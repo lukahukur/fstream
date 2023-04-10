@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import Landing from './components/landing/index';
+import Landing from './pages';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import Fs from './components/fs/fs';
+import Fs from './components/fsLayout/fs';
 import Share from './pages/Share';
 
 function App() {

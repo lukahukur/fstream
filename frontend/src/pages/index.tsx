@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../Header';
+import Header from '../components/Header';
 import { Link } from 'react-router-dom';
-import Illustration from '../../assets/illustration.svg';
+import Illustration from '../assets/illustration.svg';
 
 const Landing: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import Landing from '../landing';
+import Landing from '../../pages';
 import React from 'react';
 
 const Fs = () => {
