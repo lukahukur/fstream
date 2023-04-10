@@ -7,12 +7,11 @@ import Share from './pages/Share';
 
 function App() {
   const location = useLocation();
-
   return (
     <>
       <div
         className={`${
-          location.pathname == '/fs' ? 'border-b' : ''
+          location.pathname.includes('/fs') ? 'border-b' : ''
         } absolute w-full bg-white flex items-center h-16`}>
         <Header />
       </div>
