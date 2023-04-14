@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import Header from './components/Header';
-import Landing from './pages';
-import { Route, Routes, useLocation } from 'react-router-dom';
-import Fs from './components/fsLayout/fs';
-import Share from './pages/Share';
+import React, { useState } from 'react'
+import Header from './components/Header'
+import Landing from './pages'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import Fs from './components/fsLayout/fs'
+import Share from './pages/Share'
+import Receive from './pages/Receive'
 
 function App() {
-  const location = useLocation();
+  const location = useLocation()
   return (
     <>
       <div
@@ -19,11 +20,11 @@ function App() {
         <Route path={'/'} element={<Landing />} />
         <Route path={'/fs'} element={<Fs />}>
           <Route path={'/fs/share'} element={<Share />} />
-          <Route path={'/fs/jstream'} element={<Share />} />
+          <Route path={'/fs/jstream'} element={<Receive />} />
         </Route>
       </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
