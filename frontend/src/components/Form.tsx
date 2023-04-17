@@ -6,9 +6,9 @@ import React, {
   RefObject,
   SetStateAction,
   useCallback,
-  useEffect,
   useState
 } from 'react'
+import Button from '../components/Submit'
 
 type FormArgType = {
   inputs: {
@@ -38,7 +38,7 @@ const Form: FC<FormArgType> = ({ inputs }) => {
   return (
     <div
       className={`border border-neutral-300 bg-white
-                    w-[600px] h-64 rounded-lg p-6
+                    w-[600px] h-[280px] rounded-lg p-6
                     `}>
       <div className={'text-2xl text-gray-default'}>
         <h2>Set username and channel</h2>
@@ -64,6 +64,9 @@ const Form: FC<FormArgType> = ({ inputs }) => {
             <Indicator checked={isChannelNameValid} />
           </div>
         </span>
+      </div>
+      <div className={'pt-8'}>
+        <Button callback={() => {}} blur={true} />
       </div>
     </div>
   )

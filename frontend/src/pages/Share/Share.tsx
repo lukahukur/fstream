@@ -1,11 +1,11 @@
 import { forwardRef, useRef } from 'react'
-import Indicator from '../components/Indicator'
-import cloud from '../assets/cloud.svg'
-import Form from '../components/Form'
+import cloud from '../../assets/cloud.svg'
+import Form from '../../components/Form'
 
 const Share = () => {
   const usernameRef = useRef<HTMLInputElement>(null)
   const channelRef = useRef<HTMLInputElement>(null)
+
   return (
     <div className={`flex flex-col items-start`}>
       <Form

@@ -3,8 +3,8 @@ import Header from './components/Header'
 import Landing from './pages'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Fs from './components/fsLayout/fs'
-import Share from './pages/Share'
-import Receive from './pages/Receive'
+import Share from './pages/Share/Share'
+import Get from './pages/Get/Get'
 
 function App() {
   const location = useLocation()
@@ -20,7 +20,7 @@ function App() {
         <Route path={'/'} element={<Landing />} />
         <Route path={'/fs'} element={<Fs />}>
           <Route path={'/fs/share'} element={<Share />} />
-          <Route path={'/fs/jstream'} element={<Receive />} />
+          <Route path={'/fs/jstream'} element={<Get />} />
         </Route>
       </Routes>
     </>

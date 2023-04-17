@@ -1,8 +1,8 @@
-import Indicator from '../components/Indicator'
-import Form from '../components/Form'
+import Indicator from '../../components/Indicator'
+import Form from '../../components/Form'
 import { RefObject, useRef } from 'react'
 
-const Receive = () => {
+const Get = () => {
   const usernameRef = useRef<HTMLInputElement>(null)
   const channelRef = useRef<HTMLInputElement>(null)
 
@@ -18,4 +18,4 @@ const Receive = () => {
   )
 }
 
-export default Receive
+export default Get
